@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+      <title>Usuarios conectados | Grupo5Eduka </title>
+  </head>
+  <body>
+  <span th:if="${usuariosconectados.isEmpty()}">No hay usuarios conectados</span>
+  <table th:if="${not usuariosconectados.isEmpty()}">
+      <thead>
+      <tr>
+          <th>Usuarios conectados</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>
+              <th:block th:each="usuario : ${usuariosconectados}">
+                  <label th:text="${usuario.getUsername}"></label>
+<!--                  <input type="checkbox" name="seleccionado" th:value="${usuario}"/>-->
+                  <br>
+              </th:block>
+          </td>
+      </tr>
+      </tbody>
+  </table>
+  </body>
+</html>

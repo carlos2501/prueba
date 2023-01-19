@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Registro | Grupo5Eduka </title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="Página-registro.css" media="screen">
+    <script class="u-script" type="text/javascript" th:src="@{jquery.js}" defer=""></script>
+    <script class="u-script" type="text/javascript" th:src="@{nicepage.js}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i}"/>
+    <script type="application/ld+json">
+      {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/stock-vector-light-bulb-rocket-logo-design.jpg"
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página registro">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-white u-header" id="sec-8c7c"><a th:href="@{/index}" data-page-id="103003677" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024" title="Página 1" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">
+        <img th:src="@{images/stock-vector-light-bulb-rocket-logo-design.jpg}" class="u-logo-image u-logo-image-1">
+      </a><nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="LG">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 800; text-transform: uppercase;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+          </a>
+        </div>
+    <div class="u-custom-menu u-nav-container">
+      <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/index}" style="padding: 10px 0px;">Inicio</a>
+      </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/registro}" style="padding: 10px 0px;">Registro</a>
+      </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/contacto}" target="_blank" style="padding: 10px 0px;">Contacto</a>
+      </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/login}" style="padding: 10px 0px;">Iniciar sesión</a>
+      </li></ul>
+    </div>
+<!--        <div class="u-custom-menu u-nav-container-collapse">-->
+<!--          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">-->
+<!--            <div class="u-inner-container-layout u-sidenav-overflow">-->
+<!--              <div class="u-menu-close"></div>-->
+<!--              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{index}">Inicio</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/juegos}">Juegos</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/ajustes}">Ajustes</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/contacto}" target="_blank">Contacto</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/login}">Iniciar sesión</a></li></ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>-->
+<!--        </div>-->
+      </nav></header>
+    <section class="u-clearfix u-white u-section-1" id="sec-090d">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 45.532 45.532" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-fba9"></use></svg><svg class="u-svg-content" viewBox="0 0 45.532 45.532" x="0px" y="0px" id="svg-fba9" style="enable-background:new 0 0 45.532 45.532;"><g><path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765   S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53   c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012   c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592   c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z"></path>
+</g></svg></span>
+          <form th:action="@{/registro}" method="POST" class="u-clearfix u-form-spacing-21 u-inner-form" source="custom" name="form" style="padding: 50px;">
+            <div th:if="${usernamerepetido} != null">
+              <div style="font-weight: bold; color: red;">
+                El nombre de usuario ya está registrado
+              </div>
+            </div>
+            <div th:if="${emailrepetido} != null">
+              <div style="font-weight: bold; color: red;">
+                Este email ya ha sido utilizado para registrar otra cuenta.
+              </div>
+            </div>
+
+            <div class="u-form u-form-1">
+            <div class="u-form-group u-form-name u-form-group-1">
+              <label for="username" class="u-label">Nombre de usuario</label>
+              <input type="text" placeholder="Introduce un nombre de usuario" id="username" name="username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('username')}" th:text="${error.username}"></div>
+            </div>
+            <div class="u-form-group u-form-group-2">
+              <label for="password" class="u-label">Contraseña</label>
+              <input type="password" placeholder="Introduce una contraseña" id="password" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('password')}" th:text="${error.password}"></div>
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="password2" class="u-label">Repetir contraseña</label>
+              <input type="password" placeholder="Repite la contraseña" id="password2" name="password2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+            </div>
+            <div id="errorMsg" style="font-weight: bold; color: red;"></div>
+
+            <div class="u-form-group u-form-name">
+              <label for="nombre" class="u-label">Nombre</label>
+              <input type="text" placeholder="Introduce tu nombre" id="nombre" name="nombre" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('nombre')}" th:text="${error.nombre}"></div>
+
+            </div>
+            <div class="u-form-group u-form-name u-form-group-5">
+              <label for="primerApellido" class="u-label">Primer apellido</label>
+              <input type="text" placeholder="Introduce tu primer apellido" id="primerApellido" name="primerApellido" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('primerApellido')}" th:text="${error.primerApellido}"></div>
+
+            </div>
+            <div class="u-form-group u-form-name u-form-group-6">
+              <label for="segundoApellido" class="u-label">Segundo apellido</label>
+              <input type="text" placeholder="Introduce tu segundo apellido" id="segundoApellido" name="segundoApellido" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('segundoApellido')}" th:text="${error.segundoApellido}"></div>
+
+            </div>
+            <div class="u-form-group u-form-select u-form-group-7">
+              <label for="roles" class="u-label">Rol</label>
+              <div class="u-form-select-wrapper">
+                <select id="roles" name="roles" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="" disabled="disabled" selected>Selecciona tu rol</option>
+                  <option th:each="rol:${roles}" th:value="${rol}"
+                          th:text="${rol}"/>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email" class="u-label">Email</label>
+              <input type="email" placeholder="Introduzca tu dirección de correo electrónico" id="email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('email')}" th:text="${error.email}"></div>
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="fechaNacimiento" class="u-label">Fecha de nacimiento</label>
+              <input type="date" placeholder="Introduce tu fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <div style="font-weight: bold; color: red;" th:if="${error != null && error.containsKey('fechaNacimiento')}" th:text="${error.fechaNacimiento}"></div>
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-9">
+              <label for="provincia" class="u-label">Provincia</label>
+              <div class="u-form-select-wrapper">
+                <select id="provincia" name="provincia" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="" disabled="disabled" selected>Provincia</option>
+                  <option th:each="provincia:${provincias}" th:value="${provincia}"
+                          th:text="${provincia}"/>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+              <label for="municipio" class="u-label">Municipio</label>
+              <div class="u-form-select-wrapper">
+                <select id="municipio" name="municipio" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="" disabled="disabled" selected="selected">Municipio</option>
+                  <option th:each="municipio:${municipios}" th:value="${municipio}"
+                          th:text="${municipio}"/>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-11">
+              <label for="tipo" class="u-label">Tipo de centro educativo</label>
+              <div class="u-form-select-wrapper">
+                <select id="tipo" name="tipo" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="" disabled="disabled" selected="selected">Tipo de centro educativo</option>
+                  <option th:each="tipo:${tipos}" th:value="${tipo}"
+                          th:text="${tipo}"/>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-12">
+              <label for="centro" class="u-label">Centro educativo</label>
+              <div class="u-form-select-wrapper">
+                <select id="centro" name="centro" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="" disabled="disabled" selected="selected">Centro educativo</option>
+                  <option th:each="centro:${centros}" th:value="${centro}"
+                          th:text="${centro}"/>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-group-13">
+              <label for="curso" class="u-label">Curso</label>
+              <input type="text" placeholder="" id="curso" name="curso" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+            </div>
+            <br/>
+            <div class="u-form-agree u-form-group u-form-group-14">
+              <input type="checkbox" id="agree-4785" name="agree" class="u-agree-checkbox" required>
+              <label for="agree-4785" class="u-label">Acepto los <a href="#">términos del servicio</a>
+              </label>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <input type="submit" value="Iniciar sesión" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-radius-50 u-btn-1">
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b5fc"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Created by Grupo5Eduka</p>
+      </div></footer>
+  <script th:src="@{https://code.jquery.com/jquery-3.3.1.min.js}"></script>
+
+      <script>
+        var clave1 = document.getElementById('password');
+        clave2 = document.getElementById('password2');
+        function validatePassword() {
+          if ((clave2.value!='')&&(clave1.value != clave2.value)) {
+            document.getElementById('errorMsg').innerHTML='Las contraseñas no coinciden';
+          } else {
+            document.getElementById('errorMsg').innerHTML='';
+          }
+        }
+        clave1.onchange = validatePassword;
+        clave2.onkeyup = validatePassword;
+      </script>
+
+    </section>
+
+
+  <script th:inline="javascript">
+    /* Variables Javascript que guardan las direcciones (ContextPath) a las que se harán las peticiones
+    * AJAX en cada caso */
+
+    /* Para protocolo HTTP (Puerto 8080)*/
+    var contextPath = /*[[@{/buscarPorProvincia}]]*/
+    var contextPath2 = /*[[@{/buscarPorMunicipio}]]*/
+    var contextPath3 = /*[[@{/buscarPorTipo}]]*/
+
+            /* Para protocolo HTTPS (Puerto 8443)*/
+            // var contextPath = /*[[@{https://localhost:8443/buscarPorProvincia}]]*/
+            // var contextPath2 = /*[[@{https://localhost:8443/buscarPorMunicipio}]]*/
+            // var contextPath3 = /*[[@{https://localhost:8443/buscarPorTipo}]]*/
+
+            /* Buscar municipios segun provincia seleccionada */
+            $('#provincia').change(
+                    function () {
+                      $.getJSON(contextPath,
+                              {
+                                provincia: $(this).val(),
+                                ajax: 'true'
+                              },
+                              function (data) {
+                                var html = '<option value="">Seleccione municipio</option>';
+                                var len = data.length;
+                                for (var i = 0; i < len; i++) {
+                                  html += '<option value="' + data[i] + '">'
+                                          + data[i]
+                                          + '</option>';
+                                }
+                                html += '</option>';
+                                $('#municipio').html(html);
+                              });
+                    });
+
+    /* Buscar centro según municipio seleccionado */
+    $('#municipio').change(
+            function () {
+              $.getJSON(contextPath2,
+                      {
+                        municipio: $(this).val(),
+                        ajax: 'true'
+                      },
+                      function (data) {
+                        var html = '<option value="">Seleccione tipo de centro</option>';
+                        var len = data.length;
+                        for (var i = 0; i < len; i++) {
+                          html += '<option value="' + data[i].tipo + '">'
+                                  + data[i].tipo
+                                  + '</option>';
+                        }
+                        html += '</option>';
+                        $('#tipo').html(html);
+                      });
+            });
+
+    /* Buscar centro educativo según tipo seleccionado */
+    $('#tipo').change(
+            function () {
+              $.getJSON(contextPath3,
+                      {
+                        municipio: $('#municipio').val(),
+                        tipo: $(this).val(),
+                        ajax: 'true'
+                      },
+                      function (data) {
+                        var html = '<option value="">Seleccione centro educativo</option>';
+                        var len = data.length;
+                        for (var i = 0; i < len; i++) {
+                          html += '<option value="' + data[i].id + '">'
+                                  + data[i].nombre
+                                  + '</option>';
+                        }
+                        html += '</option>';
+                        $('#centro').html(html);
+                      });
+            });
+  </script>
+  </body>
+</html>

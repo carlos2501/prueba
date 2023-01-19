@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      style="font-size: 16px;" lang="es">
+<head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Olvidé mi contraseña | Grupo5Eduka</title>
+        <link rel="stylesheet" href="nicepage.css" media="screen">
+        <link rel="stylesheet" href="Página-login.css" media="screen">
+        <script class="u-script" type="text/javascript" th:src="@{jquery.js}" defer=""></script>
+        <script class="u-script" type="text/javascript" th:src="@{nicepage.js}" defer=""></script>
+        <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+        <link id="u-theme-google-font" rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i}">
+        <script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "",
+            "logo": "images/stock-vector-light-bulb-rocket-logo-design.jpg"
+        }</script>
+        <meta name="theme-color" content="#478ac9">
+        <meta property="og:title" content="Página login">
+        <meta property="og:type" content="website">
+    </head>
+
+<body class="u-body u-xl-mode"><header class="u-clearfix u-header u-white u-header" id="sec-8c7c">
+    <a th:href="@{/index}" data-page-id="103003677" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024" title="Página 1" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">
+        <img th:src="@{images/stock-vector-light-bulb-rocket-logo-design.jpg}" class="u-logo-image u-logo-image-1">
+    </a>
+    <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="LG">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 800; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                </g></svg>
+            </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/index}" style="padding: 10px 0px;">Inicio</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/registro}" style="padding: 10px 0px;">Registro</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/contacto}" target="_blank" style="padding: 10px 0px;">Contacto</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/login}" style="padding: 10px 0px;">Iniciar sesión</a>
+            </li></ul>
+    </nav></header>
+<section class="u-clearfix u-section-1" id="sec-58e6">
+    <div class="u-clearfix u-sheet u-sheet-1"><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 45.532 45.532" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-fdb1"></use></svg><svg class="u-svg-content" viewBox="0 0 45.532 45.532" x="0px" y="0px" id="svg-fdb1" style="enable-background:new 0 0 45.532 45.532;"><g><path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765   S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53   c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012   c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592   c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z"></path>
+</g></svg></span>
+<div class="u-form u-gradient u-radius-50 u-form-1">
+
+
+
+<form th:action="@{/forgot}" method="post" class="u-clearfix u-form-spacing-42 u-inner-form" source="custom" name="form" style="padding: 50px;">
+
+    <div class="u-form-group u-form-name">
+        <label for="email" class="u-label"> Email </label>
+        <input type="text" placeholder="Introduzca su email" id="email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-50 u-white" required="">
+    </div>
+    <div class="u-align-center u-form-group u-form-submit">
+            <input type="submit" value="Enviar" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-radius-50 u-btn-1">
+    </div>
+</form>
+    </div>
+</section>
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b5fc"><div class="u-clearfix u-sheet u-sheet-1">
+    <p class="u-small-text u-text u-text-variant u-text-1">Created by Grupo5Eduka</p>
+</div></footer>
+</body>
+</html>

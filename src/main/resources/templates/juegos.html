@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+      <title>Juegos | Grupo5Eduka </title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Página-2-juegos.css" media="screen">
+    <script class="u-script" type="text/javascript" th:src="@{jquery.js}" defer=""></script>
+    <script class="u-script" type="text/javascript" th:src="@{nicepage.js}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i}">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/stock-vector-light-bulb-rocket-logo-design.jpg"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página 2 juegos">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-white u-header" id="sec-8c7c"><a th:href="@{/index}" data-page-id="103003677" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024" title="Página 1" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">
+        <img th:src="@{images/stock-vector-light-bulb-rocket-logo-design.jpg}" class="u-logo-image u-logo-image-1">
+      </a><nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="LG">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 800; text-transform: uppercase;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/index}" style="padding: 10px 0px;">Inicio</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/juegos}" style="padding: 10px 0px;">Juegos</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/ajustes}" style="padding: 10px 0px;">Ajustes</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/contacto}" target="_blank" style="padding: 10px 0px;">Contacto</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" th:href="@{/logout}" style="padding: 10px 0px;">Cerrar sesión</a>
+</li></ul>
+        </div>
+<!--        <div class="u-custom-menu u-nav-container-collapse">-->
+<!--          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">-->
+<!--            <div class="u-inner-container-layout u-sidenav-overflow">-->
+<!--              <div class="u-menu-close"></div>-->
+<!--              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{index}">Inicio</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/juegos}">Juegos</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/ajustes}">Ajustes</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/contacto}" target="_blank">Contacto</a>-->
+<!--</li><li class="u-nav-item"><a class="u-button-style u-nav-link" th:href="@{/logout}">Cerrar sesión</a></li></ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>-->
+<!--        </div>-->
+      </nav></header>
+    <section class="u-clearfix u-gradient u-section-1" id="sec-5b80">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-width-fixed u-gallery-1" id="carousel-6efa">
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox"><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-1" data-href="#sec-156f"><div class="u-back-slide" data-image-width="1024" data-image-height="576"><img class="u-back-image u-back-image-1" src="images/portada_seccion_juegos-01.png">
+</div><div class="u-align-center u-over-slide u-over-slide-1"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-2" data-href="#sec-156f"><div class="u-back-slide" data-image-width="612" data-image-height="612"><img class="u-back-image u-back-image-2" src="images/istockphoto-897746236-612x612.jpg">
+</div><div class="u-align-center u-over-slide u-over-slide-2"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-3" data-href="#sec-156f"><div class="u-back-slide" data-image-width="1024" data-image-height="576"><img class="u-back-image u-back-image-3" src="images/portada_seccion_juegos-01-9.png">
+</div><div class="u-align-center u-over-slide u-over-slide-3"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-4" data-href="#sec-156f"><div class="u-back-slide" data-image-width="612" data-image-height="612"><img class="u-back-image u-back-image-4" src="images/istockphoto-897746236-612x612-10.jpg">
+</div><div class="u-align-center u-over-slide u-over-slide-4"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-5" data-href="#sec-156f"><div class="u-back-slide" data-image-width="1024" data-image-height="576"><img class="u-back-image u-back-image-5" src="images/portada_seccion_juegos-01-11.png">
+</div><div class="u-align-center u-over-slide u-over-slide-5"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div><div class="u-dialog-link u-effect-fade u-gallery-item u-radius-50 u-shape-round u-gallery-item-6" data-href="#sec-156f"><div class="u-back-slide" data-image-width="612" data-image-height="612"><img class="u-back-image u-back-image-6" src="images/istockphoto-897746236-612x612-12.jpg">
+</div><div class="u-align-center u-over-slide u-over-slide-6"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
+</div>
+</div></div>
+          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-2" id="sec-4476">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b5fc"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Created by Grupo5Eduka</p>
+      </div></footer>
+  <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-dialog-section-7" id="sec-156f">
+      <div class="u-container-style u-dialog u-radius-13 u-shape-round u-white u-dialog-1">
+        <div class="u-container-layout u-container-layout-1"><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 508.1 508.1" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5890"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 508.1 508.1" x="0px" y="0px" id="svg-5890" style="enable-background:new 0 0 508.1 508.1;"><path style="fill:#F6B44B;" d="M217.4,407.45c-2.4,4.6-5.2,9.1-8.2,13.3c-4.2,5.9-8.8,11.3-13.9,16.4  c-23.5,23.5-56.1,37.8-92.5,37.2c-0.1-7.5,0.6-14.9,1.7-22c-19.2,11-41.5,17.2-65.6,16.8c-0.3-24.1,5.9-46.4,16.8-65.6  c-7.1,1.1-14.5,1.8-22,1.6c-0.6-44.1,20.6-82.9,53.6-106.4c4.2-3,8.7-5.8,13.3-8.2c-0.1,0.5-0.2,1.1-0.3,1.6  c11.4,1.5,22.6,4.5,33.4,9c7.1,2.9,13.9,6.4,20.5,10.6c8.3,5.2,16.1,11.4,23.3,18.6s13.3,15,18.5,23.3c4.2,6.6,7.8,13.4,10.7,20.5  c4.5,10.8,7.5,22,9,33.4C216.4,407.65,216.9,407.55,217.4,407.45z"></path><path style="fill:#FFD05C;" d="M206.8,374.35c-4.7,17.7-13.9,33.9-27.1,47.1c-14.5,14.5-32.6,24.2-52.3,28.4l6.1-39.6l-40,22.8  c-9.3,5.4-19.4,9.2-30,11.5c2.3-10.5,6.2-20.6,11.5-30l22.8-40l-39.6,6.1c4.2-19.7,13.9-37.8,28.4-52.3  c13.2-13.2,29.4-22.4,47.1-27.1c7.1,2.9,13.9,6.4,20.5,10.6c8.3,5.2,16.1,11.4,23.3,18.6s13.3,15,18.5,23.3  C200.3,360.45,203.9,367.25,206.8,374.35z"></path><path style="fill:#41596B;" d="M200.7,508.05c2.6-2.2,5.3-4.6,7.8-7.2c25.1-25.1,38.8-57.2,41.2-90.1c3-39.8-10.7-80.7-41.2-111.2  s-71.3-44.2-111.2-41.2c-32.8,2.4-65,16.1-90.1,41.2c-2.5,2.5-4.9,5.2-7.2,7.8c4.8-38.3,21.8-75.4,51.2-104.8  c27.5-27.5,61.6-44.2,97.1-50.2c55.4-9.3,114.3,7.4,157.1,50.2c42.7,42.7,59.5,101.7,50.2,157.1c-6,35.6-22.7,69.7-50.2,97.1  C276.1,486.25,239,503.25,200.7,508.05z"></path><path style="fill:#334A5E;" d="M355.7,359.75c-32,22.1-67.6,39.6-105.9,51.1c3-39.8-10.7-80.7-41.2-111.2s-71.3-44.2-111.2-41.2  c11.5-38.4,29-74,51.1-105.9c55.4-9.3,114.3,7.4,157.1,50.2C348.2,245.35,365,304.35,355.7,359.75z"></path><path style="fill:#F2705B;" d="M215.9,407.75c-2.6-18.9-9.1-37.3-19.7-53.9c-5.2-8.3-11.4-16.1-18.6-23.3  c-7.2-7.2-15-13.4-23.3-18.6c-16.6-10.6-35-17.1-53.9-19.7c29.8-143.3,143.1-256.1,286.8-285c23.5-4.7,47.8-7.2,72.8-7.2h48.1v48.1  c0,24.9-2.5,49.3-7.2,72.8C472,264.65,359.2,377.95,215.9,407.75z"></path><path style="fill:#FFFFFF;" d="M397.6,110.55c-31.4-31.4-82.3-31.4-113.7,0c-15.7,15.7-23.6,36.3-23.5,56.9  c0.1,20.5,7.9,41.1,23.5,56.7s36.1,23.5,56.6,23.6c20.7,0.1,41.3-7.8,57-23.6C429,192.85,429,141.95,397.6,110.55z"></path><circle style="fill:#89D6F7;" cx="340.8" cy="167.35" r="53.5"></circle><path style="fill:#41596B;" d="M248.9,259.25L248.9,259.25L248.9,259.25c-53.5,18.8-112.1,77.4-130.8,130.8l0,0  C171.5,371.25,230.1,312.75,248.9,259.25z"></path><path style="fill:#334A5E;" d="M500.9,120.95L387.2,7.25c23.5-4.7,47.8-7.2,72.8-7.2h48.1v48.1  C508.1,73.05,505.6,97.45,500.9,120.95z"></path></svg></span>
+          <h2 class="u-align-center u-text u-text-default u-text-1">Acceder a la partida </h2>
+          <a href="" class="u-btn u-btn-round u-button-style u-hover-palette-2-base u-palette-2-base u-radius-50 u-text-body-alt-color u-text-hover-white u-btn-1">¡Comenzar!</a>
+        </div><button class="u-dialog-close-button u-icon u-text-grey-50 u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5801"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-5801"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button>
+      </div>
+    </section><style> .u-dialog-section-7 {
+  min-height: 826px;
+}
+
+.u-dialog-section-7 .u-dialog-1 {
+  width: 566px;
+  min-height: 339px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  height: auto;
+  margin: 158px auto 60px;
+}
+
+.u-dialog-section-7 .u-container-layout-1 {
+  padding: 0 30px;
+}
+
+.u-dialog-section-7 .u-icon-1 {
+  height: 114px;
+  width: 114px;
+  margin: 30px auto 0;
+  padding: 0;
+}
+
+.u-dialog-section-7 .u-text-1 {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  margin: 14px auto 0;
+}
+
+.u-dialog-section-7 .u-btn-1 {
+  border-style: none;
+  font-size: 1rem;
+  background-image: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 23px auto 0 137px;
+  padding: 14px 60px 14px 59px;
+}
+
+.u-dialog-section-7 .u-icon-2 {
+  width: 15px;
+  height: 15px;
+  left: auto;
+  top: 17px;
+  position: absolute;
+  right: 16px;
+}
+
+@media (max-width: 1199px) {
+  .u-dialog-section-7 .u-icon-1 {
+    height: 114px;
+    width: 114px;
+  }
+
+  .u-dialog-section-7 .u-text-1 {
+    text-transform: none;
+  }
+
+  .u-dialog-section-7 .u-btn-1 {
+    margin-left: 137px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    width: 540px;
+  }
+
+  .u-dialog-section-7 .u-container-layout-1 {
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    width: 340px;
+    min-height: 404px;
+  }
+
+  .u-dialog-section-7 .u-container-layout-1 {
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .u-dialog-section-7 .u-text-1 {
+    font-size: 1.875rem;
+    margin-top: 29px;
+  }
+
+  .u-dialog-section-7 .u-btn-1 {
+    margin-left: 0;
+  }
+}</style></body>
+</html>

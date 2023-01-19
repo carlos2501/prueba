@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="es">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<form th:action="@{/cajabox}" method="post">
+
+    <span th:if="${colores.isEmpty()}">No hay colores para seleccionar</span>
+
+    <table th:if="${not colores.isEmpty()}">
+        <thead>
+        <tr>
+            <th>Colores para dibujar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <th:block th:each="color : ${colores}">
+                    <label th:text="${color}"></label>
+                    <input type="checkbox" name="seleccionado" th:value="${color}"/>
+                    <br>
+                </th:block>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+
+</form>
+</body>
+</html>
+
+

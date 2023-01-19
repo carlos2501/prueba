@@ -1,0 +1,159 @@
+ .u-section-1 {
+  background-image: linear-gradient(white, #e9f2fa);
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 930px;
+}
+
+.u-section-1 .u-gallery-1 {
+  height: 368px;
+  width: 1203px;
+  margin: 313px auto 60px -13px;
+}
+
+.u-section-1 .u-gallery-inner-1 {
+  grid-template-columns: auto auto auto;
+}
+
+.u-section-1 .u-gallery-item-1 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-1 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-1 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-item-2 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-2 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-2 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-item-3 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-3 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-3 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-item-4 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-4 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-4 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-item-5 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-5 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-5 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-item-6 {
+  margin-right: 26px;
+}
+
+.u-section-1 .u-back-image-6 {
+  width: 375px;
+}
+
+.u-section-1 .u-over-slide-6 {
+  padding: 20px;
+}
+
+.u-section-1 .u-gallery-nav-1 {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.u-section-1 .u-gallery-nav-2 {
+  position: absolute;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-gallery-1 {
+    margin-top: 390px;
+    width: 940px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-over-slide-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-over-slide-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-over-slide-3 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-over-slide-4 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-over-slide-5 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-over-slide-6 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-gallery-1 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-gallery-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-gallery-1 {
+    width: 340px;
+  }
+} .u-section-2 {
+  background-image: linear-gradient(#e9f2fa, #adcce9);
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 500px;
+}
